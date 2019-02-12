@@ -1,0 +1,2 @@
+# testeMagazineJenkins
+just testing
