@@ -12,20 +12,21 @@ public class MagazileLuizaTest extends BaseTest {
 	
 	
 
-	String produto = "celular android";
+	String produtoString = "celular android";
+	String nomeProduto = "product_220848200";
 
 	@Test
 	public void validaFluxoPrincipalProduto() {
 
 		magazine.acessarTelaInicial();
 
-		magazine.inserirBusca(produto);
+		magazine.inserirBusca(produtoString);
 
 		magazine.clicaSearch();
 
-		Assert.assertEquals(magazine.obterTextoDaBusca(), produto);
+		Assert.assertEquals(magazine.obterTextoDaBusca(), produtoString);
 
-		magazine.clicaProduto("product_220848200");
+		magazine.clicaProduto(nomeProduto);
 
 		magazine.adicionaProdutoAoCarrinhod();
 
