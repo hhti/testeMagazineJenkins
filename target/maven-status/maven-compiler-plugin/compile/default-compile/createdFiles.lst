@@ -1,0 +1,8 @@
+br/ce/beblue/core/BaseTest.class
+br/ce/beblue/core/BasePage.class
+br/ce/beblue/core/DriverFactory$1.class
+br/ce/beblue/pages/MagazineLuizaPage.class
+br/ce/beblue/core/Propriedades.class
+br/ce/beblue/tests/MagazileLuizaTest.class
+br/ce/beblue/core/Propriedades$Browsers.class
+br/ce/beblue/core/DriverFactory.class
