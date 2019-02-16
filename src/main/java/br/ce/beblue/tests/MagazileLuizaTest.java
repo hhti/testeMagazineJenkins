@@ -16,7 +16,7 @@ public class MagazileLuizaTest extends BaseTest {
 	String nomeProduto = "product_220848200";
 
 	@Test
-	public void validaFluxoPrincipalProduto() {
+	public void validaFluxoPrincipalProdutoTest() {
 
 		magazine.acessarTelaInicial();
 
