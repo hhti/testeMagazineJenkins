@@ -1,32 +1,31 @@
 -------------------------------------------------------------------------------
 Test set: br.ce.wcaquino.tests.SaldoTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.807 sec <<< FAILURE! - in br.ce.wcaquino.tests.SaldoTest
-testSaldoConta(br.ce.wcaquino.tests.SaldoTest)  Time elapsed: 1.807 sec  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: Unable to locate element: .//tr[-1]/td[2]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'WC.local', ip: '192.168.0.184', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_121'
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.319 sec <<< FAILURE! - in br.ce.wcaquino.tests.SaldoTest
+testSaldoConta(br.ce.wcaquino.tests.SaldoTest)  Time elapsed: 0.319 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Unable to locate element: Home
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ti', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-43-generic', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=/var/folders/9v/190xzr9d70ggdm6rrx31cm980000gn/T/rust_mozprofile.WdvdQqPqwZhr, rotatable=false, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0.0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=54.0, platformVersion=16.7.0, moz:processID=74564.0, browserName=firefox, javascriptEnabled=true, platformName=darwin}]
-Session ID: 9813f839-e6a7-3b41-b317-26710ac6ef69
-*** Element info: {Using=xpath, value=.//tr[-1]/td[2]}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 65.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 13297, moz:profile: /tmp/rust_mozprofile.4f7aya..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.15.0-43-generic, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 95dc9047-52e8-414a-9675-5bf601ad96af
+*** Element info: {Using=link text, value=Home}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:175)
-	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:248)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:171)
-	at br.ce.wcaquino.core.BasePage.obterCelula(BasePage.java:205)
-	at br.ce.wcaquino.pages.HomePage.obterSaldoConta(HomePage.java:8)
-	at br.ce.wcaquino.tests.SaldoTest.testSaldoConta(SaldoTest.java:18)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at br.ce.wcaquino.core.BasePage.clicarLink(BasePage.java:128)
+	at br.ce.wcaquino.pages.MenuPage.acessarTelaPrincipal(MenuPage.java:26)
+	at br.ce.wcaquino.tests.SaldoTest.testSaldoConta(SaldoTest.java:17)
 
